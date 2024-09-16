@@ -1,0 +1,870 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8726/fast && /usr/bin/make -f CMakeFiles/cmTC_a8726.dir/build.make CMakeFiles/cmTC_a8726.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8726.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a8726.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a8726
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8726.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a8726.dir/src.c.o  -o cmTC_a8726 
+/usr/bin/ld: CMakeFiles/cmTC_a8726.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a8726.dir/build.make:87: cmTC_a8726] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a8726/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0f478/fast && /usr/bin/make -f CMakeFiles/cmTC_0f478.dir/build.make CMakeFiles/cmTC_0f478.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f478.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0f478.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0f478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f478.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_0f478.dir/CheckFunctionExists.c.o  -o cmTC_0f478  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_0f478.dir/build.make:87: cmTC_0f478] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0f478/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9fff9/fast && /usr/bin/make -f CMakeFiles/cmTC_9fff9.dir/build.make CMakeFiles/cmTC_9fff9.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9fff9.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9fff9.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9fff9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fff9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_9fff9.dir/src.c.o  -o cmTC_9fff9 
+/usr/bin/ld: CMakeFiles/cmTC_9fff9.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9fff9.dir/build.make:87: cmTC_9fff9] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9fff9/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5873b/fast && /usr/bin/make -f CMakeFiles/cmTC_5873b.dir/build.make CMakeFiles/cmTC_5873b.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5873b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5873b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5873b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5873b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5873b.dir/CheckFunctionExists.c.o  -o cmTC_5873b  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5873b.dir/build.make:87: cmTC_5873b] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5873b/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83b91/fast && /usr/bin/make -f CMakeFiles/cmTC_83b91.dir/build.make CMakeFiles/cmTC_83b91.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83b91.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_83b91.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_83b91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83b91.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_83b91.dir/src.c.o  -o cmTC_83b91 
+/usr/bin/ld: CMakeFiles/cmTC_83b91.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_83b91.dir/build.make:87: cmTC_83b91] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_83b91/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_87127/fast && /usr/bin/make -f CMakeFiles/cmTC_87127.dir/build.make CMakeFiles/cmTC_87127.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87127.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_87127.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_87127
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87127.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_87127.dir/CheckFunctionExists.c.o  -o cmTC_87127  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_87127.dir/build.make:87: cmTC_87127] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_87127/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd379/fast && /usr/bin/make -f CMakeFiles/cmTC_bd379.dir/build.make CMakeFiles/cmTC_bd379.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd379.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bd379.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bd379
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd379.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_bd379.dir/src.c.o  -o cmTC_bd379 
+/usr/bin/ld: CMakeFiles/cmTC_bd379.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bd379.dir/build.make:87: cmTC_bd379] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bd379/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8bd82/fast && /usr/bin/make -f CMakeFiles/cmTC_8bd82.dir/build.make CMakeFiles/cmTC_8bd82.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bd82.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8bd82.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8bd82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bd82.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_8bd82.dir/CheckFunctionExists.c.o  -o cmTC_8bd82  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8bd82.dir/build.make:87: cmTC_8bd82] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8bd82/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6498c/fast && /usr/bin/make -f CMakeFiles/cmTC_6498c.dir/build.make CMakeFiles/cmTC_6498c.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6498c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6498c.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6498c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6498c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_6498c.dir/src.c.o  -o cmTC_6498c 
+/usr/bin/ld: CMakeFiles/cmTC_6498c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6498c.dir/build.make:87: cmTC_6498c] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6498c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_50d4d/fast && /usr/bin/make -f CMakeFiles/cmTC_50d4d.dir/build.make CMakeFiles/cmTC_50d4d.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50d4d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_50d4d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_50d4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50d4d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_50d4d.dir/CheckFunctionExists.c.o  -o cmTC_50d4d  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_50d4d.dir/build.make:87: cmTC_50d4d] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_50d4d/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6fe28/fast && /usr/bin/make -f CMakeFiles/cmTC_6fe28.dir/build.make CMakeFiles/cmTC_6fe28.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fe28.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6fe28.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6fe28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fe28.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_6fe28.dir/src.c.o  -o cmTC_6fe28 
+/usr/bin/ld: CMakeFiles/cmTC_6fe28.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6fe28.dir/build.make:87: cmTC_6fe28] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6fe28/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0904/fast && /usr/bin/make -f CMakeFiles/cmTC_a0904.dir/build.make CMakeFiles/cmTC_a0904.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0904.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a0904.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a0904
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0904.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a0904.dir/CheckFunctionExists.c.o  -o cmTC_a0904  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a0904.dir/build.make:87: cmTC_a0904] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a0904/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_84885/fast && /usr/bin/make -f CMakeFiles/cmTC_84885.dir/build.make CMakeFiles/cmTC_84885.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84885.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_84885.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_84885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84885.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_84885.dir/src.c.o  -o cmTC_84885 
+/usr/bin/ld: CMakeFiles/cmTC_84885.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_84885.dir/build.make:87: cmTC_84885] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_84885/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9ff35/fast && /usr/bin/make -f CMakeFiles/cmTC_9ff35.dir/build.make CMakeFiles/cmTC_9ff35.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ff35.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9ff35.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9ff35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ff35.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9ff35.dir/CheckFunctionExists.c.o  -o cmTC_9ff35  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9ff35.dir/build.make:87: cmTC_9ff35] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9ff35/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_41578/fast && /usr/bin/make -f CMakeFiles/cmTC_41578.dir/build.make CMakeFiles/cmTC_41578.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41578.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_41578.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_41578
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41578.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_41578.dir/src.c.o  -o cmTC_41578 
+/usr/bin/ld: CMakeFiles/cmTC_41578.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_41578.dir/build.make:87: cmTC_41578] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_41578/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_87a6a/fast && /usr/bin/make -f CMakeFiles/cmTC_87a6a.dir/build.make CMakeFiles/cmTC_87a6a.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87a6a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_87a6a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_87a6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87a6a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_87a6a.dir/CheckFunctionExists.c.o  -o cmTC_87a6a  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_87a6a.dir/build.make:87: cmTC_87a6a] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_87a6a/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bcbc2/fast && /usr/bin/make -f CMakeFiles/cmTC_bcbc2.dir/build.make CMakeFiles/cmTC_bcbc2.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcbc2.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bcbc2.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bcbc2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcbc2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_bcbc2.dir/src.c.o  -o cmTC_bcbc2 
+/usr/bin/ld: CMakeFiles/cmTC_bcbc2.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bcbc2.dir/build.make:87: cmTC_bcbc2] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bcbc2/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3815/fast && /usr/bin/make -f CMakeFiles/cmTC_e3815.dir/build.make CMakeFiles/cmTC_e3815.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3815.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e3815.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e3815
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3815.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e3815.dir/CheckFunctionExists.c.o  -o cmTC_e3815  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e3815.dir/build.make:87: cmTC_e3815] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3815/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_99995/fast && /usr/bin/make -f CMakeFiles/cmTC_99995.dir/build.make CMakeFiles/cmTC_99995.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99995.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_99995.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_99995
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99995.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_99995.dir/src.c.o  -o cmTC_99995 
+/usr/bin/ld: CMakeFiles/cmTC_99995.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_99995.dir/build.make:87: cmTC_99995] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_99995/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fc73a/fast && /usr/bin/make -f CMakeFiles/cmTC_fc73a.dir/build.make CMakeFiles/cmTC_fc73a.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc73a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fc73a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fc73a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc73a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fc73a.dir/CheckFunctionExists.c.o  -o cmTC_fc73a  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fc73a.dir/build.make:87: cmTC_fc73a] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fc73a/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c06ae/fast && /usr/bin/make -f CMakeFiles/cmTC_c06ae.dir/build.make CMakeFiles/cmTC_c06ae.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c06ae.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c06ae.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c06ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c06ae.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_c06ae.dir/src.c.o  -o cmTC_c06ae 
+/usr/bin/ld: CMakeFiles/cmTC_c06ae.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c06ae.dir/build.make:87: cmTC_c06ae] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c06ae/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_154a4/fast && /usr/bin/make -f CMakeFiles/cmTC_154a4.dir/build.make CMakeFiles/cmTC_154a4.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_154a4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_154a4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_154a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_154a4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_154a4.dir/CheckFunctionExists.c.o  -o cmTC_154a4  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_154a4.dir/build.make:87: cmTC_154a4] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_154a4/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f3b4c/fast && /usr/bin/make -f CMakeFiles/cmTC_f3b4c.dir/build.make CMakeFiles/cmTC_f3b4c.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3b4c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f3b4c.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f3b4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3b4c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_f3b4c.dir/src.c.o  -o cmTC_f3b4c 
+/usr/bin/ld: CMakeFiles/cmTC_f3b4c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f3b4c.dir/build.make:87: cmTC_f3b4c] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f3b4c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_41bbe/fast && /usr/bin/make -f CMakeFiles/cmTC_41bbe.dir/build.make CMakeFiles/cmTC_41bbe.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41bbe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_41bbe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_41bbe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41bbe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_41bbe.dir/CheckFunctionExists.c.o  -o cmTC_41bbe  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_41bbe.dir/build.make:87: cmTC_41bbe] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_41bbe/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_afd9a/fast && /usr/bin/make -f CMakeFiles/cmTC_afd9a.dir/build.make CMakeFiles/cmTC_afd9a.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afd9a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_afd9a.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_afd9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afd9a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_afd9a.dir/src.c.o  -o cmTC_afd9a 
+/usr/bin/ld: CMakeFiles/cmTC_afd9a.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_afd9a.dir/build.make:87: cmTC_afd9a] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_afd9a/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_13932/fast && /usr/bin/make -f CMakeFiles/cmTC_13932.dir/build.make CMakeFiles/cmTC_13932.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13932.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_13932.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_13932
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13932.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_13932.dir/CheckFunctionExists.c.o  -o cmTC_13932  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_13932.dir/build.make:87: cmTC_13932] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_13932/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1fa07/fast && /usr/bin/make -f CMakeFiles/cmTC_1fa07.dir/build.make CMakeFiles/cmTC_1fa07.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fa07.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1fa07.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1fa07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fa07.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1fa07.dir/src.c.o  -o cmTC_1fa07 
+/usr/bin/ld: CMakeFiles/cmTC_1fa07.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1fa07.dir/build.make:87: cmTC_1fa07] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1fa07/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_70bb8/fast && /usr/bin/make -f CMakeFiles/cmTC_70bb8.dir/build.make CMakeFiles/cmTC_70bb8.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70bb8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_70bb8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_70bb8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70bb8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_70bb8.dir/CheckFunctionExists.c.o  -o cmTC_70bb8  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_70bb8.dir/build.make:87: cmTC_70bb8] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_70bb8/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ec295/fast && /usr/bin/make -f CMakeFiles/cmTC_ec295.dir/build.make CMakeFiles/cmTC_ec295.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec295.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ec295.dir/src.c.o   -c /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ec295
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec295.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_ec295.dir/src.c.o  -o cmTC_ec295 
+/usr/bin/ld: CMakeFiles/cmTC_ec295.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ec295.dir/build.make:87: cmTC_ec295] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ec295/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a3770/fast && /usr/bin/make -f CMakeFiles/cmTC_a3770.dir/build.make CMakeFiles/cmTC_a3770.dir/build
+make[1]: Entering directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3770.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a3770.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a3770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3770.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a3770.dir/CheckFunctionExists.c.o  -o cmTC_a3770  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a3770.dir/build.make:87: cmTC_a3770] Error 1
+make[1]: Leaving directory '/home/kitil/VO_exercise/src/VO/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a3770/fast] Error 2
+
+
+

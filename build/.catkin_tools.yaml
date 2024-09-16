@@ -1,0 +1,6 @@
+devel_space: /home/kitil/VO_exercise/devel
+install: false
+install_space: /home/kitil/VO_exercise/install
+profile: default
+source_space: /home/kitil/VO_exercise/src
+workspace: /home/kitil/VO_exercise

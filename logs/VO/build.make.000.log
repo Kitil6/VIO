@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target cf_lib[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/cf_lib.dir/src/camera.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/cf_lib.dir/src/frame.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cf_lib.dir/src/VO.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libcf_lib.so[0m
+[ 66%] Built target cf_lib
+[35m[1mScanning dependencies of target VO[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/VO.dir/src/VO.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/kitil/VO_exercise/devel/.private/VO/lib/VO/VO[0m
+[100%] Built target VO

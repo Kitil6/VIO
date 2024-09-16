@@ -1,0 +1,12 @@
+Symlinking /home/kitil/VO_exercise/devel/./setup.sh
+Symlinking /home/kitil/VO_exercise/devel/./setup.bash
+Symlinking /home/kitil/VO_exercise/devel/./_setup_util.py
+Symlinking /home/kitil/VO_exercise/devel/./local_setup.sh
+Symlinking /home/kitil/VO_exercise/devel/./setup.zsh
+Symlinking /home/kitil/VO_exercise/devel/./local_setup.zsh
+Symlinking /home/kitil/VO_exercise/devel/./local_setup.bash
+Symlinking /home/kitil/VO_exercise/devel/./cmake.lock
+Symlinking /home/kitil/VO_exercise/devel/./env.sh
+Symlinking /home/kitil/VO_exercise/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/kitil/VO_exercise/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/kitil/VO_exercise/devel/lib/pkgconfig/catkin_tools_prebuild.pc

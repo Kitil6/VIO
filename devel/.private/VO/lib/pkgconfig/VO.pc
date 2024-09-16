@@ -1,0 +1,8 @@
+prefix=/home/kitil/VO_exercise/devel/.private/VO
+
+Name: VO
+Description: Description of VO
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
